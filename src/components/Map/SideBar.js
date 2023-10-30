@@ -22,6 +22,7 @@ const SideBar = () => {
 
   function setInputValue() {
     if (localStorage.getItem('search') === "undefined") {
+      return ""
     } else {
       return (localStorage.getItem('search'))
     }
