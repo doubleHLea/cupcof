@@ -30,7 +30,7 @@ const SideBar = () => {
 
   return (
     <div style={{ backgroundColor: "#fff" }}>
-      <Sider theme='light' width='260' style={{ padding: '20px', borderLeft: "1px solid #000" }}>
+      <Sider theme='light' width='260' style={{ padding: '20px', borderRight: "1px solid #eee", }}>
         <a href='/'>
           <img
             src={Logo}
