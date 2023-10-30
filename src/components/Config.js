@@ -1,0 +1,1 @@
+export const Logo = `${process.env.PUBLIC_URL}/img/title-logo.png`
