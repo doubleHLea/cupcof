@@ -22,7 +22,6 @@ const SideBar = () => {
 
   function setInputValue() {
     if (localStorage.getItem('search') === "undefined") {
-      return ("")
     } else {
       return (localStorage.getItem('search'))
     }
@@ -48,7 +47,7 @@ const SideBar = () => {
           <Search
             placeholder="위치 검색"
             onSearch={onSearch}
-            value={setInputValue()}
+            defaultValue={setInputValue()}
             style={{ width: 220, }}
           />
           <Divider />
