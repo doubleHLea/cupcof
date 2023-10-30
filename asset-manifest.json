@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/cupcof/static/css/main.cdea90e1.css",
-    "main.js": "/cupcof/static/js/main.04108a6e.js",
+    "main.js": "/cupcof/static/js/main.fcabedda.js",
     "static/js/787.28cb0dcd.chunk.js": "/cupcof/static/js/787.28cb0dcd.chunk.js",
     "static/media/drink-1839134_1280.jpg": "/cupcof/static/media/drink-1839134_1280.3c815fcc2b6d01fc3ddc.jpg",
     "index.html": "/cupcof/index.html",
     "main.cdea90e1.css.map": "/cupcof/static/css/main.cdea90e1.css.map",
-    "main.04108a6e.js.map": "/cupcof/static/js/main.04108a6e.js.map",
+    "main.fcabedda.js.map": "/cupcof/static/js/main.fcabedda.js.map",
     "787.28cb0dcd.chunk.js.map": "/cupcof/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cdea90e1.css",
-    "static/js/main.04108a6e.js"
+    "static/js/main.fcabedda.js"
   ]
 }
