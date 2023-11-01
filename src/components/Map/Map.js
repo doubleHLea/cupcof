@@ -1,7 +1,6 @@
 
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { API_KEY } from '../Config';
-import google from 'google'
 
 const Map = () => {
   const mapRef = useRef(null);
@@ -21,7 +20,7 @@ const Map = () => {
 
   const initMap = useCallback(() => {
 
-    const map = new google.maps.Map(mapRef.current, {
+    const map = new window.google.maps.Map(mapRef.current, {
       center: { lat: 37.555264, lng: 126.936789 },
       zoom: 16,
       style: [
@@ -295,7 +294,7 @@ const Map = () => {
     }
 
     const input = document.getElementById('sidebar-search')
-    const searchBox = new google.maps.places.SearchBox(input)
+    const searchBox = new window.google.maps.places.SearchBox(input)
 
     // searchBox.addListner("places_changed", () => {
     //   const places = searchBox.getPlaces();
