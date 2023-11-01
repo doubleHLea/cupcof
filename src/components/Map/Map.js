@@ -1,11 +1,27 @@
 
-import React, { useCallback, useEffect, useRef } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
+import { API_KEY } from '../Config';
+import google from 'google'
 
 const Map = () => {
   const mapRef = useRef(null);
+  const [place, setPlace] = useState({})
+
+
+  // useEffect(() => {
+  //   const endpoinPlace = `https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJrTLr-GyuEmsRBfy61i59si0&fields=address_components&key=${API_KEY}`
+
+  //   fetch(endpoinPlace)
+  //     .then(response => response.json())
+  //     .then(response => {
+  //       // console.log(response)
+  //       setPlace(response)
+  //     })
+  // }, []);
 
   const initMap = useCallback(() => {
-    const map = new window.google.maps.Map(mapRef.current, {
+
+    const map = new google.maps.Map(mapRef.current, {
       center: { lat: 37.555264, lng: 126.936789 },
       zoom: 16,
       style: [
@@ -277,6 +293,33 @@ const Map = () => {
           map.setCenter(pos);
         })
     }
+
+    const input = document.getElementById('sidebar-search')
+    const searchBox = new google.maps.places.SearchBox(input)
+
+    // searchBox.addListner("places_changed", () => {
+    //   const places = searchBox.getPlaces();
+
+    //   if (places.length == 0) {
+    //     return;
+    //   }
+
+    //   const place = places[0];
+    //   input.value = place.name;
+
+    //   if (!place.geometry || !place.geometry.location) {
+    //     console.log("Returned place contains no geometry")
+    //     return;
+    //   }
+
+    //   if (place.geometry.veiwport) {
+    //     map.fitBounds(place.geometry.veiwport)
+    //   } else {
+    //     map.setCenter(place.geometry.location)
+    //     map.setZoom(17)
+    //   }
+    // })
+
   }, [mapRef]);
 
   useEffect(() => {

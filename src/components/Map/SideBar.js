@@ -46,6 +46,7 @@ const SideBar = () => {
           }
         }}>
           <Search
+            id='sidebar-search'
             placeholder="위치 검색"
             onSearch={onSearch}
             defaultValue={setInputValue()}
