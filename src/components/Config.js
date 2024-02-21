@@ -1,5 +1,5 @@
 export const Logo = `${process.env.PUBLIC_URL}/img/title-logo.png`
-export const API_KEY = "AIzaSyCT0l871XAG974GA-muDhoghQ5O-Ics_uM"
+export const API_KEY = "AIzaSyCIyinRfMTIzohtShZ44wVE68DOQi6NqPg"
 // export const 세부정보요청 = `https://maps.googleapis.com/maps/api/place/details/output?parameters`
 
 // ex)
